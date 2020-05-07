@@ -13,8 +13,8 @@ import (
 	Failer "github.com/onsi/ginkgo/internal/failer"
 	"github.com/onsi/ginkgo/internal/leafnodes"
 	"github.com/onsi/ginkgo/internal/spec"
-	Writer "github.com/onsi/ginkgo/internal/writer"
 	"github.com/onsi/ginkgo/reporters"
+	Writer "github.com/onsi/ginkgo/writer"
 )
 
 var noneFlag = types.FlagTypeNone

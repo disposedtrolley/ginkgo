@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/onsi/ginkgo/internal/writer"
 	"github.com/onsi/ginkgo/reporters"
 	"github.com/onsi/ginkgo/reporters/stenographer"
+	"github.com/onsi/ginkgo/writer"
 
 	"github.com/onsi/ginkgo/config"
 	"github.com/onsi/ginkgo/types"

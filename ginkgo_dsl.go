@@ -26,11 +26,11 @@ import (
 	"github.com/onsi/ginkgo/internal/remote"
 	"github.com/onsi/ginkgo/internal/suite"
 	"github.com/onsi/ginkgo/internal/testingtproxy"
-	"github.com/onsi/ginkgo/internal/writer"
 	"github.com/onsi/ginkgo/reporters"
 	"github.com/onsi/ginkgo/reporters/stenographer"
 	colorable "github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable"
 	"github.com/onsi/ginkgo/types"
+	"github.com/onsi/ginkgo/writer"
 )
 
 const GINKGO_VERSION = config.VERSION

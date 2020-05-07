@@ -13,9 +13,9 @@ import (
 	"github.com/onsi/ginkgo/config"
 	"github.com/onsi/ginkgo/internal/codelocation"
 	Failer "github.com/onsi/ginkgo/internal/failer"
-	Writer "github.com/onsi/ginkgo/internal/writer"
 	"github.com/onsi/ginkgo/reporters"
 	"github.com/onsi/ginkgo/types"
+	Writer "github.com/onsi/ginkgo/writer"
 )
 
 var _ = Describe("Suite", func() {

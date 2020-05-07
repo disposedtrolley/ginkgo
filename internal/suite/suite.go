@@ -13,9 +13,9 @@ import (
 	"github.com/onsi/ginkgo/internal/leafnodes"
 	"github.com/onsi/ginkgo/internal/spec"
 	"github.com/onsi/ginkgo/internal/specrunner"
-	"github.com/onsi/ginkgo/internal/writer"
 	"github.com/onsi/ginkgo/reporters"
 	"github.com/onsi/ginkgo/types"
+	"github.com/onsi/ginkgo/writer"
 )
 
 type ginkgoTestingT interface {
