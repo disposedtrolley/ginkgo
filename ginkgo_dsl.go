@@ -214,6 +214,15 @@ func RunSpecsWithDefaultAndCustomReporters(t GinkgoTestingT, description string,
 	return RunSpecsWithCustomReporters(t, description, specReporters)
 }
 
+func RunSpecsWithCustomReporter(t GinkgoTestingT, description string, specReporter Reporter, specWriter writer.WriterInterface) bool {
+	castedWriter := specWriter.(*writer.Writer)
+	castedWriter.SetStream(true) // stream means to output buffer contents to the writer more often
+	reporters := []reporters.Reporter{specReporter}
+	passed, _ := globalSuite.Run(t, description, reporters, castedWriter, config.GinkgoConfig)
+
+	return passed
+}
+
 //To run your tests with your custom reporter(s) (and *not* Ginkgo's default reporter), replace
 //RunSpecs() with this method.  Note that parallel tests will not work correctly without the default reporter
 func RunSpecsWithCustomReporters(t GinkgoTestingT, description string, specReporters []Reporter) bool {
